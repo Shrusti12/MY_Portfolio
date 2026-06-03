@@ -34,7 +34,7 @@ function Navbar() {
       </ul>
 
       <button className="hire-btn">
-        Hire Me
+        Download CV
       </button>
     </nav>
   );
