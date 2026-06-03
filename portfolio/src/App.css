@@ -1,39 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background: #0f172a;
-  color: white;
-  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(circle at top left,
+      rgba(139,92,246,0.25),
+      transparent 30%),
+    radial-gradient(circle at bottom right,
+      rgba(168,85,247,0.25),
+      transparent 30%),
+    #0f172a;
 }
 
-section {
-  padding: 100px 10%;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.btn {
-  background: #8b5cf6;
-  color: white;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px #8b5cf6;
+main {
+  padding-top: 120px;
 }
