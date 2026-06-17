@@ -33,7 +33,6 @@
 }
 
 /* Logo */
-
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
@@ -47,7 +46,6 @@
 }
 
 /* Navigation */
-
 .nav-links {
   display: flex;
   gap: 35px;
@@ -64,16 +62,16 @@
   font-size: 1rem;
   font-weight: 500;
   transition: 0.3s ease;
+
+  position: relative;
 }
 
 /* Hover Color */
-
 .nav-links a:hover {
   color: #8b5cf6;
 }
 
 /* Animated Underline */
-
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -94,7 +92,6 @@
 }
 
 /* Glowing Button */
-
 .hire-btn {
   padding: 12px 24px;
 
@@ -103,11 +100,7 @@
 
   border-radius: 12px;
 
-  background: linear-gradient(
-    135deg,
-    #8b5cf6,
-    #a855f7
-  );
+  background: linear-gradient(135deg, #8b5cf6, #a855f7);
 
   color: white;
   font-size: 0.95rem;
@@ -127,50 +120,52 @@
     0 0 45px #8b5cf6;
 }
 
-/* Mobile Responsive */
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
 
 @media (max-width: 768px) {
 
   .navbar {
-    width: 95%;
-    padding: 0 20px;
+    padding: 0 15px;
+    height: 65px;
   }
 
-  .nav-links {
-    gap: 15px;
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
   }
-
-  .nav-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-
-  padding: 10px 18px;
-  border-radius: 12px;
-
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-/* Glass Hover Effect */
-
-.nav-links a:hover {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(15px);
-
-  border: 1px solid rgba(255, 255, 255, 0.15);
-
-  border-radius: 50px;
-
-  color: #8b5cf6;
-
-  box-shadow:
-    0 0 20px rgba(139, 92, 246, 0.3);
-}
 
   .hire-btn {
     display: none;
+  }
+
+  /* dropdown menu */
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    flex-direction: column;
+    gap: 15px;
+
+    width: 90%;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .logo {
