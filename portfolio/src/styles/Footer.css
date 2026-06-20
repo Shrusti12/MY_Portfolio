@@ -1,0 +1,29 @@
+.footer {
+  padding: 25px 8%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-container p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 6%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
