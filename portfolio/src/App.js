@@ -17,7 +17,10 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+      //once: true, //animation happens only once - while scrolling down
+      once: false, //animation can happen again when scrolling up and down
+      mirror: true, //animation again when scrolling back
+
     });
   }, []);
   

@@ -1,52 +1,65 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "../styles/Navbar.css";
+import AOS from "aos";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    const [isOpen, setIsOpen] = useState(false);
+  const handleNavClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      setMenuOpen(false);
+
+      setTimeout(() => {
+        AOS.refreshHard();
+      }, 500);
+    }
+  };
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        Shrusti<span>.</span>
+      {/* Logo */}
+      <div className="logo" onClick={() => handleNavClick("home")}>
+        Shrusti <span>Mathapati</span>
       </div>
 
-      <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
-        ☰
+      {/* Mobile Menu Icon */}
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
 
-      <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+      {/* Nav Links */}
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
         <li>
-          <a href="#home">Home</a>
+          <button onClick={() => handleNavClick("home")}>Home</button>
         </li>
-
         <li>
-          <a href="#about">About</a>
+          <button onClick={() => handleNavClick("about")}>About</button>
         </li>
-
         <li>
-            <a href="#skills">Skills</a>
+          <button onClick={() => handleNavClick("skills")}>Skills</button>
         </li>
-
         <li>
-            <a href="#internship">Internship</a>
+          <button onClick={() => handleNavClick("internship")}>Internship</button>
         </li>
-        
-
         <li>
-          <a href="#projects">Projects</a>
+          <button onClick={() => handleNavClick("projects")}>Projects</button>
         </li>
-
         <li>
-          <a href="#contact">Contact</a>
+          <button onClick={() => handleNavClick("contact")}>Contact</button>
         </li>
-
-
-       
       </ul>
 
-      <button className="hire-btn">
-        Download CV
+      {/* Desktop Button */}
+      <button className="hire-btn" onClick={() => handleNavClick("contact")}>
+        Hire Me
       </button>
     </nav>
   );

@@ -5,18 +5,18 @@ function Skills() {
   return (
     <section id="skills" className="skills">
       <div className="skills-container">
-
+        {/* Heading */}
         <div className="skills-heading" data-aos="fade-up">
           <h4>My Skills</h4>
           <h2>Technologies I Work With</h2>
           <p>
-            Here are the technologies and tools I have worked with
-            in academic projects, internships, and web development practice.
+            Here are the technologies and tools I have worked with in academic
+            projects, internships, and full stack web development practice.
           </p>
         </div>
 
+        {/* Skills Grid */}
         <div className="skills-grid">
-
           <div className="skill-card" data-aos="zoom-in">
             <h3>Frontend</h3>
             <ul>
@@ -24,7 +24,7 @@ function Skills() {
               <li>CSS3</li>
               <li>JavaScript</li>
               <li>React.js</li>
-              <li>Responsive Design</li>
+              <li>Responsive Web Design</li>
             </ul>
           </div>
 
@@ -34,6 +34,7 @@ function Skills() {
               <li>Python</li>
               <li>Flask</li>
               <li>REST API Basics</li>
+              <li>Backend Logic Development</li>
             </ul>
           </div>
 
@@ -43,11 +44,12 @@ function Skills() {
               <li>PostgreSQL</li>
               <li>SQLite</li>
               <li>Database Design Basics</li>
+              <li>CRUD Operations</li>
             </ul>
           </div>
 
           <div className="skill-card" data-aos="zoom-in" data-aos-delay="300">
-            <h3>Tools</h3>
+            <h3>Tools & Platforms</h3>
             <ul>
               <li>Git</li>
               <li>GitHub</li>
@@ -55,7 +57,6 @@ function Skills() {
               <li>Postman</li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
