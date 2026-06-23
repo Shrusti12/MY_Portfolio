@@ -46,7 +46,7 @@ A personal portfolio website developed to showcase my profile, skills, internshi
 ## Internship Experience Included
 
 * **Python Full Stack Development Intern** – TechXonic Innovation, Bangalore
-* **Automation Testing Intern** – Internship completed during BCA with exposure to software testing basics and NeoLoad
+* **Automation Testing Intern** – Gained basic exposure to software testing concepts, test execution, and NeoLoad during a 1-month internship in BCA.
 
 ## Folder Structure
 
