@@ -99,7 +99,7 @@ function Internship() {
             <div className="internship-right">
               <div className="certificate-card">
                 <img
-                  src="/Internship certificate.jpeg"
+                  src="/Internship-certificate.jpeg"
                   alt="Internship Certificate"
                   className="certificate-image"
                 />
@@ -109,7 +109,7 @@ function Internship() {
                   <p>Python Full Stack Development Internship</p>
 
                   <a
-                    href="/Internship certificate.jpeg"
+                    href="/Internship-certificate.jpeg"
                     target="_blank"
                     rel="noreferrer"
                     className="certificate-btn"
@@ -197,7 +197,7 @@ function Internship() {
             <div className="internship-right">
               <div className="certificate-card">
                 <img
-                  src="/BCA intenship.jpeg"
+                  src="/BCA-internship.jpeg"
                   alt="Automation Testing Internship Certificate"
                   className="certificate-image"
                 />
@@ -207,7 +207,7 @@ function Internship() {
                   <p>Automation Testing Internship</p>
 
                   <a
-                    href="/BCA intenship.jpeg"
+                    href="/BCA-internship.jpeg"
                     target="_blank"
                     rel="noreferrer"
                     className="certificate-btn"
